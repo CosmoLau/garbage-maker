@@ -1,5 +1,7 @@
 # garbage-maker
 
+![GitHub](https://img.shields.io/github/license/CosmoLau/garbage-maker)
+
 为项目中的所有 `TypeScript` 脚本添加垃圾代码。
 
 ## 背景
@@ -74,3 +76,7 @@ let codeStr = "console.log();";
 /** 添加代码的比例，这个值越大，添加的代码越少 */
 let ratio = 35;
 ```
+
+## LICENSE
+
+[MIT License](./LICENSE)
