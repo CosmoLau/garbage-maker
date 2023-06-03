@@ -77,6 +77,14 @@ let codeStr = "console.log();";
 let ratio = 35;
 ```
 
+## 赞助
+
+如果该项目对你有帮助，不妨点个 `star` 来支持我。
+
+也可以通过其他方式来赞助我，从零开始将我培养成一个开源工具人。
+
+[爱发电主页](https://afdian.net/a/CosmoLau)
+
 ## LICENSE
 
 [MIT License](./LICENSE)
