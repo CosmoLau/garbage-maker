@@ -1,6 +1,6 @@
 {
   "name": "garbage-maker",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "garbage-maker，向 JS 和 TS 文件中添加垃圾代码",
   "keywords": [
     "oclif",
