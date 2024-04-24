@@ -55,7 +55,7 @@
     "@types/node": "^18",
     "chai": "^4",
     "mocha": "^10",
-    "oclif": "^4.8.2",
+    "oclif": "^4.8.8",
     "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5"
