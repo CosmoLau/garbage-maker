@@ -11,6 +11,9 @@
   "repository": "CosmoLau/garbage-maker",
   "license": "MIT",
   "author": "CosmoLau",
+  "publishConfig": {
+    "registry": "https://github.com/CosmoLau/garbage-maker.git"
+  },
   "type": "module",
   "exports": "./lib/index.js",
   "types": "dist/index.d.ts",
