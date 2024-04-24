@@ -1,6 +1,7 @@
 # garbage-maker
 
-![GitHub](https://img.shields.io/github/license/CosmoLau/garbage-maker)
+![GitHub](https://img.shields.io/github/license/CosmoLau/garbage-maker) ![NPM Version](https://img.shields.io/npm/v/garbage-maker)
+
 
 为项目中的所有 `JavaScript` 和 `TypeScript` 脚本添加垃圾代码。
 
