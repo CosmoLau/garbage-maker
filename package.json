@@ -56,7 +56,7 @@
     "@types/chai": "^4",
     "@types/mocha": "^10",
     "@types/node": "^18",
-    "chai": "^4",
+    "chai": "^5",
     "mocha": "^10",
     "oclif": "^4.8.8",
     "shx": "^0.3.4",
