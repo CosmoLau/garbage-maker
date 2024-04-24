@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/CosmoLau/garbage-maker)
 
-为项目中的所有 `TypeScript` 脚本添加垃圾代码。
+为项目中的所有 `JavaScript` 和 `TypeScript` 脚本添加垃圾代码。
 
 ## 背景
 
@@ -16,66 +16,89 @@
 
 > 本项目需要安装 [Node](https://nodejs.org/) 环境。
 
-在终端中，按照以下格式执行命令：
+使用你喜欢的包管理器全局安装 `garbage-maker`：
 
 ```shell
-node test.js [源路径文件夹](必选) clean(可选)
+npm install -g garbage-maker
 ```
 
-为文件夹下所有 `TypeScript` 脚本添加垃圾代码：
+添加垃圾代码：
 
 ```shell
-node test.js ./assets/script
+garbage-maker add [文件或目录的绝对路径]
 ```
 
-清理文件夹下所有 `TypeScript` 脚本中的垃圾代码：
+清理垃圾代码：
 
 ```shell
-node test.js ./assets/script clean
+garbage-maker clean [文件或目录的绝对路径]
 ```
 
-## 为 `JavaScript` 脚本添加代码
+查看 `garbage-maker` 所有命令的帮助：
 
-在 `garbage-maker.js` 中进行如下修改：
-
-```javascript
-// ...
-function find(filePath) {
-    let files = fs.readdirSync(filePath);
-    files.forEach((val) => {
-        let subPath = path.join(filePath, val);
-        let stat = fs.statSync(subPath);
-        // 替换原来的代码： if (stat.isFile() && val.indexOf(".ts") != -1 && val.indexOf(".meta") == -1) {
-        if (stat.isFile() && val.indexOf(".js") != -1 && val.indexOf(".meta") == -1) {
-            if (addShit) {
-                addCode(subPath);
-            }
-            else {
-                cleanCode(subPath);
-            }
-        }
-        if (stat.isDirectory()) {
-            find(subPath);
-        }
-    })
-}
+```shell
+garbage-maker --help
 ```
 
-## 自定义部分参数
+查看指定命令的帮助：
 
-修改垃圾代码的内容，尽量用项目里不常见的代码形式：
-
-```javascript
-/** 默认添加的垃圾代码，如需定制化，可修改这个变量 */
-let codeStr = "console.log();";
+```shell
+garbage-maker add --help
 ```
 
-修改垃圾代码的数量比例：
+## 自定义添加垃圾代码
 
-```javascript
-/** 添加代码的比例，这个值越大，添加的代码越少 */
-let ratio = 35;
+使用 `-c` 或者 `--code` 标志（flag）来添加自定义的垃圾代码：
+
+```shell
+garbage-maker add [绝对路径] -c "console.log();"
+# 或者
+garbage-maker add [绝对路径] --code "console.log();"
 ```
+
+> _注意_：自定义添加的垃圾代码最好是未出现在已有代码中的。
+> 在使用 `clean` 命令清理代码时，需要传入与 `add` 命令相同的 `--code` 标志，否则会清理默认的 `(1+1);` 垃圾代码。
+
+使用 `-r` 或者 `--ratio` 标志（flag）控制添加垃圾代码的百分比，即根据文件的字符数量，来添加垃圾代码的字符数量。
+
+```shell
+garbage-maker add [绝对路径] -r 50
+# 或者
+garbage-maker add [绝对路径] --ratio 50
+```
+
+> _注意_：`--ratio` 标志的值为百分比的数字部分，即示例中的 `50` 相当于 `50%`。
+
+## 修改源码
+
+该分支使用 [oclif](https://github.com/oclif/oclif) 作为 CLI 框架进行开发，如需对源码进行修改，按照以下方法进行：
+
+1. 安装依赖：
+
+    ```shell
+    npm install
+    ```
+
+2. 调试命令：
+
+    ```shell
+    # Windows
+    ./bin/dev.cmd --help
+    # MacOS 或 Linux
+    ./bin/dev.js --help
+    ```
+
+3. 构建 CLI：
+
+    ```shell
+    npm link
+    ```
+
+## 分支说明
+
+本项目以 `main` 作为默认分支，老版本的 JavaScript 代码仍包含在本项目中，可以查看 [garbage-maker.js](./garbage-maker.js)。
+
+如需查看老版本文档，可以切换至 `master` 分支查看 `README.md`。
 
 ## 赞助
 

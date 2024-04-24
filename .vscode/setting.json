@@ -1,0 +1,6 @@
+{
+    "eslint.enable": false,
+    "cSpell.words": [
+        "oclif"
+    ]
+}
