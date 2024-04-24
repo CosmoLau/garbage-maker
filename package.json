@@ -12,7 +12,7 @@
   "license": "MIT",
   "author": "CosmoLau",
   "publishConfig": {
-    "registry": "https://github.com/CosmoLau/garbage-maker.git"
+    "registry": "https://registry.npmjs.org/"
   },
   "type": "module",
   "exports": "./lib/index.js",
