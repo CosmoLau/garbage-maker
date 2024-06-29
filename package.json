@@ -55,7 +55,7 @@
     "@oclif/test": "^3",
     "@types/chai": "^4",
     "@types/mocha": "^10",
-    "@types/node": "^18",
+    "@types/node": "^20",
     "chai": "^5",
     "mocha": "^10",
     "oclif": "^4.8.8",
