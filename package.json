@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^5.0.5",
-    "@oclif/core": "^3",
+    "@oclif/core": "^4",
     "@oclif/plugin-help": "^6",
     "@oclif/plugin-plugins": "^5",
     "@types/inquirer": "^9.0.7"
