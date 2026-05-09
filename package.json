@@ -8,7 +8,7 @@
   ],
   "homepage": "https://github.com/CosmoLau/garbage-maker",
   "bugs": "https://github.com/CosmoLau/garbage-maker/issues",
-  "repository": "CosmoLau/garbage-maker",
+  "repository": "https://github.com/CosmoLau/garbage-maker.git",
   "license": "MIT",
   "author": "CosmoLau",
   "publishConfig": {
