@@ -46,7 +46,7 @@
   "dependencies": {
     "@inquirer/prompts": "^8.4.2",
     "@oclif/core": "^4.11.1",
-    "@oclif/plugin-help": "^6.2.47",
+    "@oclif/plugin-help": "^6.2.48",
     "@oclif/plugin-plugins": "^5.4.66",
     "@types/inquirer": "^9.0.9"
   },
