@@ -107,7 +107,7 @@ garbage-maker add [绝对路径] --ratio 50
 
 也可以通过其他方式来赞助我，从零开始将我培养成一个开源工具人。
 
-[爱发电主页](https://afdian.net/a/CosmoLau)
+爱发电主页：[https://afdian.net/a/CosmoLau](https://www.ifdian.net/a/CosmoLau?utm_source=copylink&utm_medium=link)
 
 ## LICENSE
 
