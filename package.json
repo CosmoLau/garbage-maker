@@ -44,21 +44,21 @@
     "topicSeparator": " "
   },
   "dependencies": {
-    "@inquirer/prompts": "^8.4.2",
-    "@oclif/core": "^4.11.1",
-    "@oclif/plugin-help": "^6.2.47",
-    "@oclif/plugin-plugins": "^5.4.66",
-    "@types/inquirer": "^9.0.9"
+    "@inquirer/prompts": "^8.5.2",
+    "@oclif/core": "^4.11.14",
+    "@oclif/plugin-help": "^6.2.53",
+    "@oclif/plugin-plugins": "^5.4.82",
+    "@types/inquirer": "^9.0.10"
   },
   "devDependencies": {
     "@oclif/prettier-config": "^0.2.1",
-    "@oclif/test": "^4.1.18",
+    "@oclif/test": "^4.1.20",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^25.6.2",
+    "@types/node": "^25.9.4",
     "chai": "^6.2.2",
-    "mocha": "^11.7.5",
-    "oclif": "^4.23.0",
+    "mocha": "^11.7.6",
+    "oclif": "^4.23.24",
     "shx": "^0.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
